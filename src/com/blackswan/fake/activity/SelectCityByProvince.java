@@ -117,16 +117,24 @@ public class SelectCityByProvince extends BaseActivity
             City cityModel = (City) mCityLit.getAdapter()
                     .getItem(pos);
             BaseApplication application = ((BaseApplication) getApplication());
+            String city0 = application.preferences.getString("city0", null);
             String city1 = application.preferences.getString("city1", null);
             String city2 = application.preferences.getString("city2", null);
-            if (cityModel.getName().equals(city2)||cityModel.getName().equals(city1)) {
-            	application.putString("city1", city1);
-    			application.putString("city2", city2);
+            String city3 = application.preferences.getString("city3", null);
+            if (cityModel.getName().equals(city2)||cityModel.getName().equals(city1)||cityModel.getName().equals(city0)) {
+            	application.putString("city3", cityModel.getName());
+			} 
+            if (city3.equals(city0)||city3.equals(city1)||city3.equals(city2)) {
+            	application.putString("city0",city0);
+	        	application.putString("city1", city1);
+				application.putString("city2", city2);
+				application.putString("city3", cityModel.getName());
 			}else {
 				application.putString("city0",city1);
 	        	application.putString("city1", city2);
-				application.putString("city2", cityModel.getName());
-			}	
+				application.putString("city2", city3);
+				application.putString("city3", cityModel.getName());
+			}
             finish();
         }
 

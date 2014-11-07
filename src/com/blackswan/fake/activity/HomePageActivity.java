@@ -66,7 +66,7 @@ public class HomePageActivity extends ActivityGroup implements OnClickListener
 	protected void initEvent() {
 		cityView.setOnClickListener(this);
 		BaseApplication application = ((BaseApplication) getApplication());
-		String historycity=application.preferences.getString("city2", null);
+		String historycity=application.preferences.getString("city3", null);
         if (historycity==null) {
 			city.setText(application.mCurrentcity);
 		}else {
@@ -107,7 +107,7 @@ public class HomePageActivity extends ActivityGroup implements OnClickListener
 		protected void onResume() {
 			// 重新显示Activity时重置城市
 			BaseApplication application = ((BaseApplication) getApplication());
-			String historycity=application.preferences.getString("city2", null);
+			String historycity=application.preferences.getString("city3", null);
 	        if (historycity==null) {
 				city.setText(application.mCurrentcity);
 			}else {

@@ -48,8 +48,7 @@ public class SelectCityActivity extends TabActivity{
         
         initViews();
         initEvent();
-        application = ((BaseApplication) getApplication());
-        citytext.setText(application.mCurrentcity);
+        
 		
 	}
 	
@@ -57,6 +56,8 @@ public class SelectCityActivity extends TabActivity{
 	protected void initViews(){
 		reback = (ImageView) findViewById(R.id.select_reback);
 		citytext = (Button) findViewById(R.id.selectcitytext);
+		application = ((BaseApplication) getApplication());
+        citytext.setText(application.mCurrentcity);
 	}
 	
 	//为控件添加事件
@@ -76,15 +77,21 @@ public class SelectCityActivity extends TabActivity{
 				String city0 = application.preferences.getString("city0", null);
 				String city1 = application.preferences.getString("city1", null);
 	            String city2 = application.preferences.getString("city2", null);
+	            String city3 = application.preferences.getString("city3", null);
 	            String currentcity = application.mCurrentcity;
 	            if (currentcity.equals(city2)||currentcity.equals(city1)||currentcity.equals(city0)) {
-	            	application.putString("city0", city0);
-	            	application.putString("city1", city1);
-	    			application.putString("city2", city2);
+	            	application.putString("city3", currentcity);
+				}
+	            if (city3.equals(city0)||city3.equals(city1)||city3.equals(city2)) {
+	            	application.putString("city0",city0);
+		        	application.putString("city1", city1);
+					application.putString("city2", city2);
+					application.putString("city3", currentcity);
 				}else {
 					application.putString("city0",city1);
 		        	application.putString("city1", city2);
-					application.putString("city2", currentcity);
+					application.putString("city2", city3);
+					application.putString("city3", currentcity);
 				}
 				finish();
 			}
