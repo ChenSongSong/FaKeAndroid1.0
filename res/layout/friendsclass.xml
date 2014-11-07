@@ -11,17 +11,7 @@
         android:layout_alignParentLeft="true" 
         android:layout_centerVertical="true" 
         android:layout_marginLeft="10dp" 
-        android:src="@color/maincolor" /> 
-
-    <TextView
-        android:id="@+id/buddy_listview_group_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/buddy_listview_image"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/buddy_listview_image"
-        android:gravity="center"
-        android:text="分组名称" />
+        android:src="@color/maincolor" />
  
     <TextView 
         android:id="@+id/buddy_listview_group_num" 
@@ -30,5 +20,15 @@
         android:layout_alignParentRight="true" 
         android:layout_centerVertical="true" 
         android:layout_marginRight="10dp" 
-        android:text="[10/10]" /> 
+        android:text="[10/10]" />
+
+    <TextView
+        android:id="@+id/buddy_listview_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="分组名称" />
+ 
 </RelativeLayout> 

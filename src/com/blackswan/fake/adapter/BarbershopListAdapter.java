@@ -39,17 +39,17 @@ public class BarbershopListAdapter extends BaseAdapter
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		DataList dl = new DataList();
-		convertView = LayoutInflater.from(context).inflate(R.layout.lisititem_barber, null);
-		dl.iv_name = (ImageView) convertView.findViewById(R.id.iv_name);
-		//dl.iv_shangjia_image = (ImageView) convertView.findViewById(R.id.iv_shangjia_image);
-		dl.tv_shangjia_name = (TextView) convertView.findViewById(R.id.tv_shangjia_name);
-		dl.tv_youhuijia = (TextView) convertView.findViewById(R.id.tv_youhuijia);
-		dl.tv_price = (TextView) convertView.findViewById(R.id.tv_price);
-		dl.tv_qi = (TextView) convertView.findViewById(R.id.tv_qi);
-		dl.tv_address = (TextView) convertView.findViewById(R.id.tv_address);
-		dl.tv_category = (TextView) convertView.findViewById(R.id.tv_category);
-		dl.tv_distance = (TextView) convertView.findViewById(R.id.tv_distance);
-		
+//		convertView = LayoutInflater.from(context).inflate(R.layout.listitem_barber, null);
+//		dl.iv_name = (ImageView) convertView.findViewById(R.id.iv_name);
+//		//dl.iv_shangjia_image = (ImageView) convertView.findViewById(R.id.iv_shangjia_image);
+//		dl.tv_shangjia_name = (TextView) convertView.findViewById(R.id.tv_shangjia_name);
+//		dl.tv_youhuijia = (TextView) convertView.findViewById(R.id.tv_youhuijia);
+//		dl.tv_price = (TextView) convertView.findViewById(R.id.tv_price);
+//		dl.tv_qi = (TextView) convertView.findViewById(R.id.tv_qi);
+//		dl.tv_address = (TextView) convertView.findViewById(R.id.tv_address);
+//		dl.tv_category = (TextView) convertView.findViewById(R.id.tv_category);
+//		dl.tv_distance = (TextView) convertView.findViewById(R.id.tv_distance);
+//		
 		return convertView;
 	}
 	

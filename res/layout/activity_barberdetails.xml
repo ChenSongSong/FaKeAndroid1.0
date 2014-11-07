@@ -45,16 +45,32 @@
             android:layout_weight="0"
              >
 
+            <FrameLayout
+            android:id="@+id/barber_item_layout_avatar"
+            android:layout_width="77dip"
+            android:layout_height="77dip"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp" >
+
             <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="14dp"
-                android:src="@drawable/headtest" />
+                android:id="@+id/barber_item_iv_avatar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/headtest"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bglistitem_selector_session_select"
+                android:duplicateParentState="true"
+                android:scaleType="fitXY" />
+        </FrameLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:orientation="vertical" >
 
                 <LinearLayout
@@ -134,7 +150,7 @@
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical" >
 
                         <TextView
@@ -168,7 +184,7 @@
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical" >
 
                         <TextView
@@ -320,11 +336,11 @@
 
             <ImageView
                 android:id="@+id/imageView7"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="5dp"
                 android:src="@drawable/ic_arrow_right_gray" />
 
         </RelativeLayout>
@@ -360,11 +376,11 @@
 
             <ImageView
                 android:id="@+id/imageView9"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="5dp"
                 android:src="@drawable/ic_arrow_right_gray" />
 
         </RelativeLayout>
@@ -407,8 +423,8 @@
 
             <ImageView
                 android:id="@+id/imageView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
                 android:layout_marginRight="5dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
@@ -477,14 +493,15 @@
 
                 </LinearLayout>
 
-                <Spinner
-                    android:id="@+id/spinner1"
-                    android:layout_width="60dp"
-                    android:layout_height="40dp"
+                <Button
+                    android:id="@+id/btn_order"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:text="预约"
+                    android:textColor="#fff"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:contentDescription="选择理发项目"
                     android:background="@color/maincolor" />
 
             </RelativeLayout>
@@ -543,14 +560,13 @@
 
                 </LinearLayout>
 
-                <Spinner
-                    android:id="@+id/spinner2"
+                <Button
+                    android:id="@+id/btn_order2"
                     android:layout_width="60dp"
                     android:layout_height="40dp"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:contentDescription="选择理发项目"
                     android:background="@color/maincolor" />
 
             </RelativeLayout>

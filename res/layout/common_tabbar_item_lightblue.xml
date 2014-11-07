@@ -14,7 +14,7 @@
         android:background="#ffa5a9ad"
         android:visibility="gone" />
 
-    <com.immomo.momo.android.view.HandyTextView
+    <com.blacswan.fake.view.HandyTextView
         android:id="@+id/tabbar_item_htv_label"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
