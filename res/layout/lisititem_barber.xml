@@ -39,35 +39,16 @@
             android:layout_toRightOf="@+id/barber_item_layout_avatar"
             android:gravity="center_vertical"
             android:orientation="vertical" >
-
-            <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_marginBottom="7dip"
-                android:layout_weight="1"
-                android:gravity="center" >
-
-                <LinearLayout
-                    android:id="@+id/barber_item_layout_icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="10dip"
-                    android:orientation="horizontal" >
-                </LinearLayout>
-
                 <com.blackswan.fake.view.HandyTextView
                     android:id="@+id/barber_item_htv_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true"
                     android:layout_toLeftOf="@+id/barber_item_layout_icon"
                     android:singleLine="true"
+                    android:text="曲靖"
+                    android:layout_alignLeft="true"
                     android:textColor="@color/text_color"
                     android:textSize="17sp" />
-            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -95,14 +76,6 @@
                         android:layout_width="8dip"
                         android:layout_height="8dip"
                         android:scaleType="fitXY" />
-
-                    <com.blackswan.fake.view.HandyTextView
-                        android:id="@+id/barber_item_htv_age"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="2dip"
-                        android:textColor="@color/white"
-                        android:textSize="10sp" />
                 </LinearLayout>
 
                 <com.blackswan.fake.view.HandyTextView
@@ -133,17 +106,75 @@
                         android:textColor="@color/font_value"
                         android:textSize="12sp" />
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addup" />
+
             </LinearLayout>
 
-            <com.blackswan.fake.view.HandyTextView
-                android:id="@+id/barber_item_htv_sign"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ellipsize="end"
-                android:singleLine="true"
-                android:textColor="@color/font_value"
-                android:textSize="13sp" />
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/barberappraise"
+                    android:textSize="11sp" />
+                 <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginBottom="2dp"
+                            android:src="@drawable/ic_rating_star_small_on" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginBottom="2dp"
+                            android:src="@drawable/ic_rating_star_small_on" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginBottom="2dp"
+                            android:src="@drawable/ic_rating_star_small_on" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginBottom="2dp"
+                            android:src="@drawable/ic_rating_star_small_on" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginBottom="2dp"
+                            android:src="@drawable/ic_rating_star_small_on" />
+
+                        <com.blackswan.fake.view.HandyTextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/distance"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="30dp" />
+                        <com.blackswan.fake.view.HandyTextView
+				                android:id="@+id/tv_distancecount"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:text="0.2km"
+				                android:textSize="11sp"
+				                android:textColor="@color/maincolor"
+				                android:layout_marginBottom="2dp"
+				                android:layout_marginLeft="5dp"
+				                android:gravity="center"/>
+
+            </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
 </LinearLayout>
