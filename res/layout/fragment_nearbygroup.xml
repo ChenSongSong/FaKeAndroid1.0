@@ -4,7 +4,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <com.immomo.momo.android.view.MoMoRefreshExpandableList
+    <com.blackswan.fake.FakeRefreshExpandableList
         android:id="@+id/nearby_group_mmrelv_list"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -12,7 +12,7 @@
         android:divider="@null"
         android:fadingEdge="none"
         android:listSelector="@drawable/list_selector_transition" >
-    </com.immomo.momo.android.view.MoMoRefreshExpandableList>
+    </com.blackswan.fake.FakeRefreshExpandableList>
 
     <LinearLayout
         android:id="@+id/nearby_group_layout_cover"

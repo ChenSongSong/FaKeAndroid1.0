@@ -12,7 +12,7 @@ public class BarberShopDetailsPageActivity extends BaseActivity
 	{
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.barbershopdetails);
+		setContentView(R.layout.activity_barbershopdetails);
 	}
 
 	@Override
