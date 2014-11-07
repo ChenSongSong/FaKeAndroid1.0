@@ -43,10 +43,8 @@
                     android:id="@+id/barber_item_htv_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toLeftOf="@+id/barber_item_layout_icon"
                     android:singleLine="true"
                     android:text="曲靖"
-                    android:layout_alignLeft="true"
                     android:textColor="@color/text_color"
                     android:textSize="17sp" />
 
@@ -111,7 +109,8 @@
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/addup" />
+                    android:text="@string/addup"
+                    android:textSize="10sp" />
 
             </LinearLayout>
 
