@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/barbershop" >
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 子菜单选项 -->
+
+     <LinearLayout
+            android:id="@+id/layout_barbershop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_normal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/barbershop_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="42.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_btn_text"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/homepagetext1"
+                android:textColor="#737373"
+                android:textSize="16.0sp" />
+
+           
+
+            <TextView
+                android:id="@+id/barbershop_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="42.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_btn_text"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/homepagetext2"
+                android:textColor="#737373"
+                android:textSize="16.0sp" />
+
+          
+
+            <TextView
+                android:id="@+id/barbershop_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="42.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_btn_text"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/homepagetext3"
+                android:textColor="#737373"
+                android:textSize="16.0sp" />
+
+        
+        </LinearLayout>
+            
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+	<ScrollView
+            android:id="@+id/sv_barbershop_sc"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"       
+            android:scrollbars="none" >
+       <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+		
+            <LinearLayout
+                android:id="@+id/testbarbershop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="#fff" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/barbershop1"
+                     />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.22"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="魔方发艺"
+                            android:textSize="14sp"
+                            android:layout_margin="10dp" />
+
+                       
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="简介："
+                            android:textColor="@color/black3"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="连锁品牌，值得信赖"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="12sp"
+                            android:singleLine="true"
+                            android:textColor="@color/black3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            
+            <!-- 展示用开头 -->
+
+               <LinearLayout
+                   android:id="@+id/testbarbershop1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="4dp"
+                   android:background="#fff" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/barbershop2"
+                     />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.22"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="港仔造型工作室"
+                            android:textSize="14sp"
+                            android:layout_margin="10dp" />
+
+                       
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="简介："
+                            android:textColor="@color/black3"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="拥有多名一流理发师"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="12sp"
+                            android:singleLine="true"
+                            android:textColor="@color/black3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            
+               <LinearLayout
+                   android:id="@+id/testbarber2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="4dp"
+                   android:background="#fff" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                   android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/barbershop3"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.22"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="名流发型沙龙"
+                            android:textSize="14sp"
+                            android:layout_margin="10dp" />
+
+                       
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="简介："
+                            android:textColor="@color/black3"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="业内榜样"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="12sp"
+                            android:singleLine="true"
+                            android:textColor="@color/black3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout> 
+            
+               <LinearLayout
+                   android:id="@+id/testbarber4"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="4dp"
+                   android:background="#fff" >
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/barbershop4"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.22"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发艺造型沙龙"
+                            android:textSize="14sp"
+                            android:layout_margin="10dp" />
+
+                    
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="简介："
+                            android:textColor="@color/black3"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="拥有最好的口碑"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="12sp"
+                            android:singleLine="true"
+                            android:textColor="@color/black3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>     
+            <!-- 展示用结尾 -->
+
+          
+        <LinearLayout
+            android:id="@+id/ll_barbershop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_refresh_addr" >
+
+            <ListView
+                android:id="@+id/lv_barbershop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </LinearLayout>
+        </LinearLayout>
+      </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

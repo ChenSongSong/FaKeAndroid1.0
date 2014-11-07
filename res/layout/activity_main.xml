@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 选项卡布局必须要用TabHost -->
+<TabHost
+        android:id="@+id/maintabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        
+        <!-- 页面内容 -->
+        <FrameLayout 
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+            
+        </FrameLayout>
+        
+        
+        <!-- 选项卡 -->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="-6dip"
+            android:layout_weight="0"
+            android:background="#fafafa"
+            android:gravity="center_horizontal|center_vertical" >
+            
+        </TabWidget>
+     </LinearLayout>
+	</TabHost>
+</LinearLayout>

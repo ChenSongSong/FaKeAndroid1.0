@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="40dip" > 
+    <ImageView 
+        android:id="@+id/buddy_listview_child_avatar" 
+        android:layout_width="40dip" 
+        android:layout_height="40dip" 
+        android:layout_alignParentLeft="true" 
+        android:layout_alignParentTop="true" 
+        android:layout_marginLeft="10dp" 
+        android:src="@drawable/ic_launcher" /> 
+    <TextView 
+        android:id="@+id/buddy_listview_child_nick" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentTop="true" 
+        android:layout_toRightOf="@+id/buddy_listview_child_avatar" 
+        android:text="昵称" 
+        android:textSize="16sp" /> 
+    <TextView 
+        android:id="@+id/buddy_listview_child_trends" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignLeft="@+id/buddy_listview_child_nick" 
+        android:layout_alignParentBottom="true" 
+        android:text="该好友暂时没有新动态" 
+        android:textSize="12sp" /> 
+ 
+</RelativeLayout> 

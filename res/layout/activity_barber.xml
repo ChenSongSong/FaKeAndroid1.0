@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/barber" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 子菜单选项 -->
+
+     <LinearLayout
+            android:id="@+id/layout_barber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_normal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/barber_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="42.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_btn_text"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/homepagetext1"
+                android:textColor="#737373"
+                android:textSize="16.0sp" />
+
+           
+
+            <TextView
+                android:id="@+id/barber_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="42.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_btn_text"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/homepagetext2"
+                android:textColor="#737373"
+                android:textSize="16.0sp" />
+
+          
+
+            <TextView
+                android:id="@+id/barber_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="42.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_btn_text"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/homepagetext3"
+                android:textColor="#737373"
+                android:textSize="16.0sp" />
+
+        
+        </LinearLayout>
+            
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+        <ScrollView
+            android:id="@+id/sv_barber_sc"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"       
+            android:scrollbars="none" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+		
+            <LinearLayout
+                android:id="@+id/testbarber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="#fff" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/headtest"
+                    android:background="@drawable/headrecent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.22"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="张某某"
+                            android:textSize="14sp"
+                            android:layout_margin="10dp" />
+
+                       
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="简介："
+                            android:textColor="@color/black3"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="从业五年，好评如潮"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="12sp"
+                            android:singleLine="true"
+                            android:textColor="@color/black3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最擅长发型："
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black3" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            
+            <!-- 展示用开头 -->
+
+               <LinearLayout
+                   android:id="@+id/testbarber1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="4dp"
+                   android:background="#fff" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/headtest1"
+                    android:background="@drawable/headrecent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.22"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="宋某某"
+                            android:textSize="14sp"
+                            android:layout_margin="10dp" />
+
+                       
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="简介："
+                            android:textColor="@color/black3"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="从业十年，技术一流"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="12sp"
+                            android:singleLine="true"
+                            android:textColor="@color/black3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最擅长发型："
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black3" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            
+               <LinearLayout
+                   android:id="@+id/testbarber2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="4dp"
+                   android:background="#fff" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/headtest2"
+                    android:background="@drawable/headrecent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.22"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="刘某某"
+                            android:textSize="14sp"
+                            android:layout_margin="10dp" />
+
+                       
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="简介："
+                            android:textColor="@color/black3"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="从业七年，曾被评为国家一级造型师"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="12sp"
+                            android:singleLine="true"
+                            android:textColor="@color/black3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最擅长发型："
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black3" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout> 
+            
+               <LinearLayout
+                   android:id="@+id/testbarber4"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="4dp"
+                   android:background="#fff" >
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/headtest3"
+                    android:background="@drawable/headrecent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.22"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="王某某"
+                            android:textSize="14sp"
+                            android:layout_margin="10dp" />
+
+                    
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="简介："
+                            android:textColor="@color/black3"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="从业四年，技术一流"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="12sp"
+                            android:singleLine="true"
+                            android:textColor="@color/black3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最擅长发型："
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black3" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            
+             <LinearLayout
+                 android:id="@+id/testbarber3"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="4dp"
+                 android:background="#fff" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/headtest4"
+                    android:background="@drawable/headrecent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.22"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="朱某某"
+                            android:textSize="14sp"
+                            android:layout_margin="10dp" />
+
+                    
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="简介："
+                            android:textColor="@color/black3"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="从业四年，技术一流"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="12sp"
+                            android:singleLine="true"
+                            android:textColor="@color/black3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最擅长发型："
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black3" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>     
+            <!-- 展示用结尾 -->
+
+            <LinearLayout
+                android:id="@+id/ll_barber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ListView
+                    android:id="@+id/lv_barber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+                </ListView>
+            </LinearLayout>
+           
+        </LinearLayout>
+</ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 登录界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:orientation="vertical"
+    android:background="@color/citylist_divider" >
+    
+<!-- 头部导航 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/bg_actionbar"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="0">
+   
+         <ImageView
+              android:layout_width="45dp"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="5dip"
+              android:src="@drawable/btn_back_normal" />
+         
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="18sp"
+             android:layout_marginLeft="40dip"
+             android:textColor="@android:color/white"
+            android:text="登录"/>
+         
+    </LinearLayout>
+    
+    <!-- 登录界面 -->
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        
+	        <LinearLayout android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="15dip"
+	            android:background="@color/bg_table_subtitle"
+	            android:orientation="vertical"
+	            android:gravity="center_horizontal">
+	        	<EditText android:id="@+id/et_userphone"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="15dip"
+	        	    android:layout_marginRight="15dip"
+	        	    android:layout_marginTop="40dip"
+	        	    android:layout_gravity="center"
+	        	    android:hint="手机号"
+	        	    android:textColorHint="@color/abs__bright_foreground_disabled_holo_dark"
+	        	    android:background="@drawable/bg_edit_selected"
+	        	    />
+	        	
+	        	<EditText android:id="@+id/et_userpwd"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="15dip"
+	        	    android:layout_marginRight="15dip"
+	        	    android:layout_marginTop="40dip"
+	        	    android:layout_marginBottom="20dip"
+	        	    android:layout_gravity="center"
+	        	    android:hint="密码"
+	        	    android:textColorHint="@color/abs__bright_foreground_disabled_holo_dark"
+	        	    android:password="true"
+	        	    android:background="@drawable/bg_edit_unselected"
+	        	    />
+	    	</LinearLayout>
+
+	        <CheckBox
+	            android:id="@+id/rememberCheck"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="left"
+	            android:layout_marginLeft="10dip"
+	            android:text="@string/rememberme" />
+
+	        <LinearLayout 
+	            android:orientation="vertical"
+	            android:layout_width="fill_parent"
+	            android:layout_height="100dip"
+	            android:layout_marginTop="10dip"
+	            android:gravity="center">
+	        <Button android:id="@+id/btn_login"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dip"	           
+	            android:layout_marginLeft="30dip"
+	            android:layout_marginRight="30dip"	            
+	            android:background="@drawable/bg_actionbar"
+	            android:text="登录"
+	            android:textColor="@color/white"
+	            android:onClick="onLogin"
+	            android:clickable="true"
+	           />
+	        <!-- textView是为了隔开两个按钮 -->
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="5dip"/>
+	        <Button android:id="@+id/btn_register"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dip"	           
+	            android:layout_marginLeft="30dip"
+	            android:layout_marginRight="30dip"	            
+	            android:background="@drawable/bg_actionbar"
+	            android:text="免费注册"
+	            android:textColor="@color/white"
+	           />
+	         </LinearLayout>
+	        <RelativeLayout android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dip"
+	            android:layout_marginRight="15dip"
+	            android:layout_marginTop="10dip">
+	            <Button
+	                android:id="@+id/forgetpwd"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="忘记密码？"
+	                android:background="@null"
+	                android:textColor="@color/maincolor"/>
+	            <Button
+	                android:id="@+id/join" 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="理发店加盟"
+	                android:background="@null"
+	                android:onClick="register"
+	                android:textColor="@color/maincolor"
+	                android:layout_alignParentRight="true"/>
+	        </RelativeLayout>
+	        
+	</LinearLayout>
+</LinearLayout>

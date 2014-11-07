@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 头部导航 -->
+   <LinearLayout 
+        android:id="@+id/mycollect"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/bg_actionbar"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="0">
+      
+         <ImageView
+              android:layout_width="45dp"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="5dip"
+              android:src="@drawable/btn_back_normal" />
+         
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="18sp"
+             android:layout_marginLeft="40dip"
+             android:textColor="@android:color/white"
+            android:text="我的收藏"/>
+         
+    </LinearLayout>
+    <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/mycollectbarber"
+                    android:layout_width="0dip"
+                    android:layout_height="70dip"
+                    android:layout_weight="1"
+                    android:background="@color/abs__bright_foreground_holo_dark"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"/>
+                        <!--  android:background="@drawable/ic_coupon_disabled"--> 
+                        
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:text="收藏的理发师" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dip"
+                    android:layout_height="70dip"
+                    android:layout_weight="0"
+                    android:background="@color/bg_gray"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/mycollectbarbershop"
+                    android:layout_width="0dip"
+                    android:layout_height="70dip"
+                    android:layout_weight="1"
+                    android:background="@color/abs__bright_foreground_holo_dark"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        />
+                        <!--  android:background="@drawable/ic_coupon_disabled"-->               
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:paddingRight="3dip"
+                            android:text="收藏的理发店铺" />
+                </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
