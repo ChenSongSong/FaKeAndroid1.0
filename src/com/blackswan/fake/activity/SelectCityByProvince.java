@@ -59,7 +59,7 @@ public class SelectCityByProvince extends BaseActivity
         setContentView(R.layout.activity_selectcitybyalph);
 
         mCityLit = (CityListView) findViewById(R.id.city_list);
-        mCityLit.setmHeaderViewVisible(false);
+        mCityLit.setmHeaderViewVisible(true);
         mCityLit.setPinnedHeaderView(this, R.layout.title,
                 R.id.contactitem_catalog);
         letterListView = (LetterListView) findViewById(R.id.cityLetterListView);
