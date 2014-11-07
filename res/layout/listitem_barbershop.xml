@@ -131,13 +131,13 @@
 				                    android:id="@+id/tv_leiji"
 				                    android:layout_width="wrap_content"
 				                    android:layout_height="wrap_content"
-				                    android:text="@string/leiji" 
+				                    android:text="@string/addup" 
 				                    android:textSize="8sp"
 				                    android:layout_marginLeft="3dp"
 				                    android:layout_marginBottom="2dp"
 				                    android:layout_gravity="center"/>
 				                <com.blackswan.fake.view.HandyTextView
-				                android:id="@+id/tv_leijicount"
+				                android:id="@+id/tv_addupcount"
 				                android:layout_width="wrap_content"
 				                android:layout_height="wrap_content"
 				                android:text="132"
@@ -205,16 +205,16 @@
 				                android:layout_gravity="center" >
 
 				                <com.blackswan.fake.view.HandyTextView
-				                    android:id="@+id/tv_juli"
+				                    android:id="@+id/tv_distance"
 				                    android:layout_width="wrap_content"
 				                    android:layout_height="wrap_content"
-				                    android:text="@string/juli" 
+				                    android:text="@string/distance" 
 				                    android:textSize="8sp"
 				                    android:layout_marginBottom="2dp"
 				                    android:layout_marginLeft="3dp"
 				                    android:layout_gravity="center"/>
 				                <com.blackswan.fake.view.HandyTextView
-				                android:id="@+id/tv_julicount"
+				                android:id="@+id/tv_distancecount"
 				                android:layout_width="wrap_content"
 				                android:layout_height="wrap_content"
 				                android:text="0.2km"

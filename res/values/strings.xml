@@ -28,7 +28,8 @@
     <string name="currentcity">当前定位城市</string>
     <string name="servicestar">服务评价 ：</string>
     <string name="pricestar">价格评价 ：</string>
-    <string name="leiji">累计预约</string>
-    <string name="juli">距     离</string>
+    <string name="addup">累计预约</string>
+    <string name="distance">距     离</string>
+    <string name="barberappraise">评价星级</string>
 
 </resources>
